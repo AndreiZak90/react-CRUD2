@@ -1,0 +1,131 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.addPost_box {
+  text-align: center;
+  padding: 15px;
+  background: #026873;
+}
+
+.addPost_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addPost_btn_box {
+  background: #121e2b;
+  padding: 5px 15px;
+  width: 200px;
+  border: 1px solid #322940;
+  border-radius: 10px;
+}
+
+.addPost_btn_box:hover {
+  background: #0b8c43;
+  border: 1px solid #0b8c43;
+  color: #322940;
+}
+
+.error_texxt {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.textarea {
+  background: #322940;
+  width: 250px;
+}
+
+.classic_btn {
+  padding: 5px 15px;
+  background-color: #038c8c;
+  border: 1px solid #322940;
+  border-radius: 10px;
+}
+
+.classic_btn:hover {
+  background: #026873;
+  border: 1px solid #026873;
+  color: #322940;
+}
+
+.new_post {
+  width: 500px;
+  background: #0b8c43;
+  border-radius: 15px;
+  padding: 30px;
+  position: relative;
+}
+
+.new_post Form {
+  display: flex;
+  gap: 10px;
+}
+
+.close_btn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 20px;
+  color: red;
+  height: 10px;
+}
+
+.list_block {
+  display: block;
+  width: 400px;
+  height: auto;
+  background: #5e35f2;
+  border: 2px solid #1b7ea6;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px 0;
+}
+
+.list_info_block {
+  display: flex;
+  align-items: center;
+}
+
+.list_img {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.list_text {
+  text-align: center;
+}
+
+.remove_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 5px;
+}
+
+.change_link,
+.delete_link {
+  padding: 3px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.change_link:hover,
+.delete_link:hover {
+  color: black;
+}
+
+.change_link {
+  background: green;
+}
+
+.delete_link {
+  background: red;
+}
