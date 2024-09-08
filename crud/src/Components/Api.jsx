@@ -1,3 +1,5 @@
+import { redirect } from "react-router-dom";
+
 export const post = (form) => {
   fetch("http://localhost:7070/posts", {
     method: "POST",
@@ -6,6 +8,8 @@ export const post = (form) => {
     },
     body: JSON.stringify(form),
   });
+
+  return redirect("/");
 };
 
 export const del = (id) => {

@@ -30,6 +30,7 @@
 }
 
 .error_texxt {
+  display: block;
   text-align: center;
   margin-top: 30px;
   font-size: 40px;
@@ -54,6 +55,7 @@
 }
 
 .new_post {
+  margin: 15px auto 0;
   width: 500px;
   background: #0b8c43;
   border-radius: 15px;
@@ -128,4 +130,32 @@
 
 .delete_link {
   background: red;
+}
+
+.changes_list {
+  margin: 20px auto 0;
+  width: 600px;
+  background: #5e35f2;
+}
+
+.changes_item {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_changes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input {
+    margin-top: 10px;
+  }
+}
+
+.changes_item_area {
+  color: #121e2b;
+  width: 250px;
+  background: #f2d335;
 }

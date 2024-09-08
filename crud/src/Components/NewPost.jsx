@@ -1,25 +1,24 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-const post = (form) => {
-  fetch("http://localhost:7070/posts", {
+const post = async (form) => {
+  await fetch("http://localhost:7070/posts", {
     method: "POST",
     body: JSON.stringify(form),
   });
 };
 
-// eslint-disable-next-line react/prop-types
 export default function NewPost() {
   const nav = useNavigate();
   const [value, setValue] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    nav("/");
+
     post({
-      id: Math.random(),
       content: value,
     });
+    nav(-1);
   };
 
   console.log(value);
@@ -31,7 +30,7 @@ export default function NewPost() {
           X
         </Link>
         <p className="title_newPost">Новый пост</p>
-        <form>
+        <form onSubmit={handleSubmit}>
           <textarea
             rows={3}
             cols={8}
@@ -41,9 +40,7 @@ export default function NewPost() {
             onChange={(e) => setValue(e.target.value)}
             required
           ></textarea>
-          <button type="submit" onClick={handleSubmit} className="classic_btn">
-            Сохранить
-          </button>
+          <input type="submit" value="Сохранить" className="classic_btn" />
         </form>
       </div>
     </>

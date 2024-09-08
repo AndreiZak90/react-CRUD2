@@ -113,3 +113,7 @@ label {
 legend {
   display: block;
 }
+
+.none {
+  display: none;
+}
